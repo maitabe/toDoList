@@ -1,0 +1,172 @@
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+    font-family: 'Baloo Tamma', cursive;
+}
+
+.navbar {
+    background-color: gold;
+    border-color: #f0ad4e;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #555;
+    background-color: gold;
+}
+
+.glyphicon {
+	font-size: 20px;
+	color: #555;
+}
+
+#searchField.input-group {
+	margin-left: -15px;
+	margin-bottom: 15px;
+	width: 50%;
+
+}
+
+
+#searchField.form-control {
+	width: 45%;
+
+    margin-left: -15px;
+}
+
+.custom-container {
+	background-color: lightgrey;
+    /*width: 100%;*/
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 12px;
+}
+
+.label-select {
+	display: block;
+}
+
+input#contentText {
+    padding-right: 60%;
+}
+
+
+.flex-item {
+	display: inline-flex;
+    flex: 0;
+    margin-right: 25px;
+    cursor: pointer;
+    border-radius: 9px;
+    padding: 5px;
+	/*border: 1px solid green;*/
+}
+
+.well {
+	margin-bottom: 8px;
+}
+
+.well-sm {
+	padding: 3px;
+}
+
+div#iconDateTime {
+    margin-bottom: 30px;
+}
+
+.btn-block {
+    display: block;
+    width: 50%;
+    margin-top: 15%;
+    background-color: gold;
+    float: right;
+}
+
+.btn-block:hover {
+    background-color: tomato;
+}
+
+#searchTool {
+    padding-right: 68%;
+}
+
+.col-xs-12 {
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+.panel.fixed-panel-left {
+     background-color: inherit;
+}
+
+.fixed-panel-left {
+     height: calc(100vh - 300px);
+}
+
+.fixed-panel-right {
+     height: calc(100vh - 300px);
+  	overflow-y: scroll;
+}
+
+.item-color-label {
+	background-color: gold;
+}
+
+.item-color-priority {
+	background-color: lightsalmon
+}
+
+.item-color {
+	background-color: lightgray;
+}
+
+.item-color-dateTime {
+	background-color: greenyellow;
+}
+
+.flex-item:first-child {
+    cursor: default;
+    pointer-events: none;
+}
+
+.col-custom-left {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.col-custom-right {
+	padding-right: 0px;
+	padding-left: 15px;
+}
+.pnl-content {
+    height: 50px;
+    border: 1px solid darkgrey;
+    padding: 9px;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+.pnl-folder {
+    height: 50px;
+    border: 1px solid darkgrey;
+    padding: 9px;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+a.btn-group.btn-group-xs {
+    float: right;
+}
+
+
+
+@media (min-width: 768px)
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 0px;
+}

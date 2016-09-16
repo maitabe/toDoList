@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>To Do List</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Open+Sans" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <!-- <link href="css/todo_list.css" rel="stylesheet"> -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <div class="container">
+    <nav class="navbar navbar-default navbar-custom">
+  	  <div class="container-fluid">
+  	    <div class="navbar-header">
+  	      <a class="navbar-brand" href="#">
+  	        <span class="glyphicon glyphicon-check" aria-hidden="true"></span> &nbsp;To Do List
+  	      </a>
+  	    </div>
+  	    <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active">
+                	<a href="">
+                	<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                	</a>
+                </li>
+                <li>
+                	<a href="../navbar-static-top/">
+                	<span class="glyphicon glyphicon-bell" aria-hidden="true"></span>
+                	</a>
+                </li>
+                <li>
+                	<a href="../navbar-fixed-top/">
+                	<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                	</a>
+                </li>
+              </ul>
+        </div><!--/.nav-collapse -->
+  	  </div>
+	  </nav>
+	  <div class="jumbotron">
+      <div class="container-fluid">
+        <div id="searchField" class="input-group">
+          <!-- <span class="glyphicon glyphicon-search input-group-addon" aria-hidden="true"></span> -->
+          <input  type="text" class="form-control" placeholder="Search">
+        </div>
+
+        <div class="row custom-container">
+            <div class="col-lg-6  ">
+              <form submit="">
+                <div class="form-group">
+                  <div class="input-group">
+                    <label class="control-label" >Title</label>
+                    <input id="titleText" type="text" class="form-control" placeholder="title">
+                  </div><!-- input-group -->
+                </div>
+                <div class="form-group">
+                  <div class="input-group">
+                      <label class="control-label">write content</label>
+                      <input id="contentText"type="text" class="form-control" placeholder="ToDo something">
+                  </div><!-- input-group -->
+                </div>
+              </form>
+              <button id="basic-addon2" class="btn btn-default btn-block">Add</button>
+            </div>
+
+            <div class="col-lg-6 ">
+              <div id="iconLabel" class="well well-sm ">
+                  <div class="glyphicon glyphicon-tag icon-task flex-item" aria-hidden="true" title="label"></div>
+                  <div id="" class="flex-item" data-value="personal">personal</div>
+                  <div id="" class="flex-item" data-value="health">health</div>
+                  <div id="" class="flex-item" data-value="finances">finances</div>
+              </div>
+              <div id="iconPriority" class="well well-sm ">
+                  <div class="glyphicon glyphicon-tasks icon-task flex-item" aria-hidden="true" title="priority"> </div>
+                  <div id="" class="flex-item" data-value="high">high</div>
+                  <div id="" class="flex-item" data-value="medium">medium</div>
+                  <div id="" class="flex-item" data-value="low">low</div>
+              </div>
+              <div id="iconColor" class="well well-sm ">
+                  <div class="glyphicon glyphicon-text-background icon-task flex-item" aria-hidden="true" title="color"> </div>
+                  <div id="" class="flex-item" data-value="red">red</div>
+                  <div id="" class="flex-item" data-value="yellow">yellow</div>
+                  <div id="" class="flex-item" data-value="green">green</div>
+              </div>
+              <div id="iconDateTime" class="well well-sm ">
+                  <div class="glyphicon glyphicon-time icon-task flex-item" aria-hidden="true" title="date/time"> </div>
+                  <div id="" class="flex-item" data-value="morning">morning</div>
+                  <div id="" class="flex-item" data-value="afternoon">afternoon</div>
+                  <div id="" class="flex-item" data-value="evening">evening</div>
+              </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-5 col-custom-left">
+            <div class="well">
+              <div class="panel panel-default fixed-panel-left">
+                <div class="titleList panel-heading" >Labels</div>
+                <div class="panel-body " id="listLabel"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7 col-custom-right">
+            <div class="well" >
+              <div class="panel panel-default fixed-panel-right">
+                  <div class="titleList panel-heading " >List of Stuff</div>
+                  <div class="panel-body " id="listStuff"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div> <!-- /container-fluid -->
+    </div> <!-- /jumbotron -->
+  </div> <!-- /container -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/todo_list_new.js"></script>
+    <script src="js/toDoList_obj.js"></script>
+  </body>
+</html>
