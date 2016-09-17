@@ -30,7 +30,6 @@ body {
 
 }
 
-
 #searchField.form-control {
 	width: 45%;
 
@@ -44,6 +43,7 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 12px;
+    position: relative;
 }
 
 .label-select {
@@ -79,10 +79,9 @@ div#iconDateTime {
 
 .btn-block {
     display: block;
-    width: 50%;
-    margin-top: 15%;
+    width: 30%;
     background-color: gold;
-    float: right;
+    margin: 0 auto;
 }
 
 .btn-block:hover {
@@ -154,7 +153,7 @@ div#iconDateTime {
 
 .pnl-folder {
     height: 50px;
-    border: 1px solid darkgrey;
+    border-bottom: 1px dotted darkgrey;
     padding: 9px;
     margin-bottom: 10px;
     line-height: 30px;
@@ -162,11 +161,17 @@ div#iconDateTime {
 
 a.btn-group.btn-group-xs {
     float: right;
+    cursor: pointer;
 }
 
-
+@media (min-width: 990px)
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 0px;
+}
 
 @media (min-width: 768px)
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
     margin-left: 0px;
 }
+
+
