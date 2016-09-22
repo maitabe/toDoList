@@ -42,13 +42,13 @@ function getArrTasks() {
 		as._tasks.splice(taskIndex, 1);
 		getArrTasks();
 
-			//if i have more than 1 tasks in the same label substract
-		if (as.labelList[taskLabel] > 1) {
+
+			//if i have more than 1 tasks in the same label subtract
+		if (as.labelList[taskLabel] > 1 + '') {
 			as.labelList[taskLabel] = as.labelList[taskLabel] - 1;
 		}else{
-			//if the label is only contain for one task, delete
+			//if the label contain only one task, delete
 			delete as.labelList[taskLabel];
-			// as.labelList.splice(taskLabel, 1);
 		}
 
 		printLabelsArr();
@@ -125,9 +125,9 @@ $(document).ready(function() {
 
 		//push label if not exist
 		// if(as.labelList[ts.label] !== undefined){
-		if(as.labelList.hasOwnProperty('ts.label')) {
+		if(!as.labelList.hasOwnProperty(ts.label)) {
 			//as.labelList.push(ts.label);
-			as.labelList[ts.label] = 1;
+			as.labelList[ts.label] =1;
 		}else{
 			//exist
 			as.labelList[ts.label] = as.labelList[ts.label] + 1;
